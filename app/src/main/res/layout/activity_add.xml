@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_title_bar"
+        android:background="@color/white"
+        android:layout_height="49dp">
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:src="@mipmap/back"
+            android:layout_height="30dp" />
+        <android.support.v7.widget.AppCompatTextView
+            android:textStyle="bold"
+            android:textColor="@color/a1"
+            android:textSize="@dimen/textsize18"
+            android:id="@+id/tv_titles"
+            android:layout_centerInParent="true"
+            android:text="里程碑"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:background="@color/s_color"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_mileleave" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="级别："
+                    android:textColor="@color/text333"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv_grade"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:paddingRight="12dp"
+                    android:textColor="@color/text666"
+                    android:textColorHint="@color/text666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/s_color" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_mission_milepost" />
+
+                <TextView
+                    android:id="@+id/tv_mile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="里程碑名称*："
+                    android:textColor="@color/text333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:hint="请输入"
+                    android:id="@+id/et_milepost"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:paddingRight="12dp"
+                    android:textColor="@color/text666"
+                    android:textColorHint="@color/text666"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/s_color" />
+            <LinearLayout
+                android:id="@+id/ll_percent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_percent" />
+
+                <TextView
+                    android:id="@+id/tv_per"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="占比*："
+                    android:textColor="@color/text333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/et_percent"
+                    android:inputType="number"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:hint="请输入"
+                    android:maxLines="1"
+
+                    android:textColor="@color/text666"
+                    android:textColorHint="@color/text666"
+                    android:textSize="14sp" />
+                <TextView
+                    android:paddingRight="12dp"
+                    android:text="%"
+                    android:textColor="@color/text666"
+                    android:textSize="14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_percent"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/s_color" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="13dp">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/icon_executor" />
+
+                <TextView
+                    android:id="@+id/tv_exe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="执行人*："
+                    android:textColor="@color/text333"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:hint="请输入"
+                    android:id="@+id/et_executor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|right"
+                    android:maxLines="1"
+                    android:paddingRight="12dp"
+                    android:textColor="@color/text666"
+                    android:textColorHint="@color/text666"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/s_color" />
+
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginBottom="75dp"
+                android:gravity="center"
+                android:id="@+id/tv_add"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:background="@drawable/round_btn_blue"
+                android:text="添加"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

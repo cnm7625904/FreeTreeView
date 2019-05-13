@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="boco_height_divider_lv">0.5dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="dp2">2dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="three_grid_unit">5dp</dimen>
+    <dimen name="one_and_a_half_grid_unit">12dp</dimen>
+    <dimen name="three">30dp</dimen>
+    <dimen name="textsize10">10sp</dimen>
+    <dimen name="textsize11">11sp</dimen>
+    <dimen name="textsize12">12sp</dimen>
+    <dimen name="textsize13">13sp</dimen>
+    <dimen name="textsize14">14sp</dimen>
+    <dimen name="textsize15">15sp</dimen>
+    <dimen name="textsize16">16sp</dimen>
+    <dimen name="textsize17">17sp</dimen>
+    <dimen name="textsize18">18sp</dimen>
+    <dimen name="textsize19">19sp</dimen>
+    <dimen name="textsize20">20sp</dimen>
+
+    <dimen name="sp_10">10sp</dimen>
+    <dimen name="sp_11">11sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_13">13sp</dimen>
+    <dimen name="sp_14r">14sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_17">17sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_19">19sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+
+
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="sp_14">10sp</dimen>
+    <dimen name="popupwindow_menu_item_divider_height">1px</dimen>
+
+    <!--朋友圈尺寸定义-->
+    <dimen name="item_avatar">48dp</dimen>
+    <dimen name="item_padding">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>
